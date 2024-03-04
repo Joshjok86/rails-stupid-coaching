@@ -2,12 +2,12 @@
 
 <div class="m-3 p-3 border-start border-5">
 <p><%=@questions%></p>
-<p class="fw-bolder fst-italic">- You</p>
+<p class="fst-italic">- You</p>
 </div>
 
 <div class="bg-warning p-3 m-3 border-start border-5">
-<p><%=@answers%></p>
-<p class="fw-bolder fst-italic">- Coach</p>
+<p class="fw-bolder"><%=@answers%></p>
+<p class="fst-italic">- Coach</p>
 </div>
 
 <div class="p-3"><%= link_to "Ask a new question", ask_path %>
