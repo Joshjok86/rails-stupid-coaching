@@ -8,9 +8,9 @@ class QuestionsController < ApplicationController
 
 
     if params[:answer] == "I am going to work"
-      @answers = "Great"
-    # elseif params[:answer].to_s.ends_with?("?")
-    #   @answers = "Silly question, get dressed and go to work!"
+      @answers = "Great!"
+    elsif params[:answer].ends_with?("?")
+      @answers = "Silly question, get dressed and go to work!"
     else
       @answers = "I don't care get dressed and go to work!"
     end
